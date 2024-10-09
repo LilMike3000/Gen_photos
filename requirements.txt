@@ -1,0 +1,5 @@
+customtkinter==5.2.2
+dlib==19.24.6
+numpy==2.1.2
+Pillow==10.4.0
+Requests==2.32.3
