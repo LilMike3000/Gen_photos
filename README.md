@@ -1,5 +1,5 @@
 # Gen_photos
-Simple Python program for generating pictures (exe-file with simple UI)  
+Simple Python program for generating pictures (with UI)  
 Base txt2img model - FLUX Dev 
 
 How to use:
@@ -10,3 +10,6 @@ How to use:
 
 API of TensorOpera AI service is used
 https://tensoropera.ai/prod/model/Flux/Dev
+
+![image](https://github.com/user-attachments/assets/62a3bc64-4e29-46e3-82e3-fe579019f691)
+
