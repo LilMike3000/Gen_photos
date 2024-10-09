@@ -16,13 +16,14 @@ class ImageGeneratorApp:
         self.output_dir = "generated_images"
         os.makedirs(self.output_dir, exist_ok=True)
 
-        # Многострочное текстовое поле для промпта
         self.prompt_label = ctk.CTkLabel(root, text="Prompt:")
         self.prompt_label.pack(pady=5)
         self.prompt_text = ctk.CTkTextbox(root, width=500, height=100)
         self.prompt_text.pack(pady=5)
-        self.prompt_text.insert("1.0", "Man with dark hair and a woman with dark blonde hair, both of Slavic appearance, in a room in a cabin in the woods. They look into the camera, faces clearly visible. Photorealistic, high resolution, detailed clothing, natural lighting, bright colors, realistic perspective")
-
+        
+        # Your prompt
+        self.prompt_text.insert("1.0", "A man and a woman in Paris. Photorealistic")
+        
         self.model_name_label = ctk.CTkLabel(root, text="Model Name:")
         self.model_name_label.pack(pady=5)
         self.model_name_entry = ctk.CTkEntry(root, width=200)
@@ -62,7 +63,6 @@ class ImageGeneratorApp:
         self.generate_button = ctk.CTkButton(root, text="Generate", command=self.generate_images)
         self.generate_button.pack(pady=20)
 
-        # Статус-бар
         self.status_label = ctk.CTkLabel(root, text="Status: Ready")
         self.status_label.pack(pady=5)
 
